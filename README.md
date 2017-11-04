@@ -1,6 +1,8 @@
 ## PikaRide
 
-This a tiny project made for Epitech module 'Mobile Hybrid Application'.
+This a tiny project made for Epitech module 'Mobile Hybrid Application' that I was taking from 5th-7th October 2017.
+
+Group: Nawin Kim (nawin.kim@epitech.eu)
 
 ### Description
 
@@ -53,3 +55,7 @@ TODO
 - [ ] Check user profile from a car pin
 - [ ] Overall design
 - [ ] Testing on bad conditions (low internet speed)
+
+### Author
+
++ nawin.kim@epitech.eu
