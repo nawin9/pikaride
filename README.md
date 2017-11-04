@@ -18,7 +18,8 @@ Note that on Safari, google map cannot be loaded. So better use chrome for testi
 ```bash
 $ sudo npm install -g ionic cordova
 $ git clone https://github.com/nawin9/pikaride
-$ cd pikaride && ionic serve -l
+$ cd pikaride && npm install
+$ ionic serve -l
 ```
 
 #### Running on devices
