@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Connexion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Adresse mail</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Mot de passe</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+
+  <ion-row no-padding>
+    <ion-col>
+      <button ion-button (click)="login(user)">Se Connecter</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button color="light" (click)="register()">Pas de compte?</button>
+    </ion-col>
+  </ion-row>
+</ion-content>

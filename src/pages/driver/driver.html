@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="primary" no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Conducteurs</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list  *ngFor="let item of items" (click)="checkProfile(item)">
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/pikachu.png">
+        </ion-avatar>
+        <h2>Pikachu</h2>
+        <p>95 avenue Parmentier 75011 Paris</p>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>

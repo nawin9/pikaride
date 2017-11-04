@@ -10,13 +10,11 @@
   <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4e8ef7">
-  
+
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <!-- cordova.js required for cordova apps -->
-  <script src="cordova.js"></script>
 
   <!-- un-comment this code to enable service worker
   <script>
@@ -29,12 +27,15 @@
 
   <link href="build/main.css" rel="stylesheet">
 
+
 </head>
 <body>
 
   <!-- Ionic's root component and where the app will load -->
   <ion-app></ion-app>
-
+  <!-- cordova.js required for cordova apps -->
+  <script src="cordova.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp9qyC8MxFjGaBrAq7gS5_HNYyo5QTXt0&libraries=places"></script>
   <!-- The polyfills js is generated during the build process -->
   <script src="build/polyfills.js"></script>
 

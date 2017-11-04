@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Profil</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content parallax-header no-bounce class="bg-modal">
+    <div class="header-image"></div>
+    <div class="main-content" text-wrap text-center>
+        <div class="circular"></div>
+        <h2>{{user.name}}</h2>
+        <p>{{user.occupation}} &bull; {{user.location}}</p>
+        <p class="profile-description">{{user.description}}</p>
+        <hr>
+        <ion-list no-lines>
+            <ion-item>
+                <ion-icon name="mail" color="primary" item-start></ion-icon>
+                <p>Adresse Email</p>
+                {{user.email}}
+                <a button ion-button href="mailto:{{user.email}}" color="primary" item-end medium>Lancer App</a>
+            </ion-item>
+            <ion-item>
+                <ion-icon item-start name="call" color="danger"></ion-icon>
+                <p>Portable</p>
+                {{user.phone}}
+                <a button ion-button href="tel:{{user.phone}}" color="danger" item-end medium>Appeler</a>
+            </ion-item>
+        </ion-list>
+        <hr>
+    </div>
+
+</ion-content>

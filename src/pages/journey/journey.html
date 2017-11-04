@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary" no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Conducteurs</ion-title>
+
+    <ion-buttons end>
+      <button ion-button color="secondary" outline (click)="showList()"><ion-icon name="list"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item margin>
+      <ion-input type="text" placeholder="Tapez une adresse de destination" (click)="showModal()" [(ngModel)]="address.place">
+      </ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div #map id="map">
+    <div class="google-maps"></div>
+  </div>
+</ion-content>
