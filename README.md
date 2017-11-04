@@ -30,6 +30,14 @@ $ ionic cordova run ios
 ```
 Substitute ios for android for Android device.
 
+To generate a apk, make sure that there is no conflicts in config.xml by first remove the platform and reinstall it before build.
+
+```bash
+$ ionic cordova platform remove android
+$ ionic cordova platform add android
+$ ionic cordova build android --release
+```
+
 #### Ionic view
 
 TODO
